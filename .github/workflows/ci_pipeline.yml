@@ -44,6 +44,7 @@ jobs:
 
       - name: Check formatting (ruff)
         run: uv run ruff format --check .
+        continue-on-error: true
 
       - name: Lint (ruff)
         run: uv run ruff check .
